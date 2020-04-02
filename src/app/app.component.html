@@ -1,1 +1,74 @@
-<p>LATEST UPDATED TIME : {{latest_updated_time}}</p>
+<app-header></app-header>
+
+<h2 style="text-align: center; margin-top: 50px;">Latest Update Time: <br>{{latest_updated_time}}</h2><br><br>
+
+<!-- <app-local></app-local>  -->
+
+<h2 style="text-align: center;">Local Info</h2><br>
+<br>
+
+<div class="a card-deck">
+    <div class="card bg-primary">
+
+        <div class="card-body text-center">
+            <i class="fa fa-ambulance fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Local Total Cases: </h3>
+            <h4 style="text-align: center;">{{local_total}}</h4>
+        </div>
+    </div>
+    <div class="card bg-warning">
+        <div class="card-body text-center">
+            <i class="fa fa-medkit fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Local New Cases: </h3>
+            <h4 style="text-align: center;">{{local_info_data}}</h4>
+        </div>
+    </div>
+    <div class="card bg-success">
+        <div class="card-body text-center">
+            <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Local Recovered: </h3>
+            <h4 style="text-align: center;">{{local_recovered_people}}</h4>
+        </div>
+    </div>
+    <div class="card bg-danger">
+        <div class="card-body text-center">
+            <i class="fa fa-exclamation-triangle fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Local Deaths: </h3>
+            <h4 style="text-align: center;">{{local_death_people}}</h4>
+        </div>
+    </div>
+</div> <br><br>
+
+<h2 style="text-align: center;">Global Info</h2><br>
+
+<div class="a card-deck">
+    <div class="card bg-primary">
+
+        <div class="card-body text-center">
+            <i class="fa fa-ambulance fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Global Total Cases: </h3>
+            <h4 style="text-align: center;">{{global_total_cases_people}}</h4>
+        </div>
+    </div>
+    <div class="card bg-warning">
+        <div class="card-body text-center">
+            <i class="fa fa-medkit fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Global New Cases: </h3>
+            <h4 style="text-align: center;">{{global_new_cases_people}}</h4>
+        </div>
+    </div>
+    <div class="card bg-success">
+        <div class="card-body text-center">
+            <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Global Recovered: </h3>
+            <h4 style="text-align: center;">{{global_recovered_people}}</h4>
+        </div>
+    </div>
+    <div class="card bg-danger">
+        <div class="card-body text-center">
+            <i class="fa fa-exclamation-triangle fa-5x" aria-hidden="true"></i><br><br><br>
+            <h3 class="card-text">Global Deaths: </h3>
+            <h4 style="text-align: center;">{{global_deaths_people}}</h4>
+        </div>
+    </div>
+</div>
