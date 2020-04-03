@@ -1,4 +1,6 @@
-<app-header></app-header>
+<app-header>
+
+</app-header>
 
 <h2 style="text-align: center; margin-top: 50px;">Latest Update Time: <br>{{latest_updated_time}}</h2><br><br>
 
@@ -58,6 +60,7 @@
         </div>
     </div>
     <div class="card bg-success">
+
         <div class="card-body text-center">
             <i class="fa fa-heartbeat fa-5x" aria-hidden="true"></i><br><br><br>
             <h3 class="card-text">Global Recovered: </h3>
@@ -71,4 +74,26 @@
             <h4 style="text-align: center;">{{global_deaths_people}}</h4>
         </div>
     </div>
-</div>
+</div><br><br><br><br>
+
+<h1 style="text-align: center;">CURRENT STATUS OF THE HOSPITALS IN SRI LANAKA</h1>
+
+<hr>
+<hr>
+
+<!-- <ul *ngFor="let hospital of hospitals_data">
+    <li>{{hospital.hospital.name}}</li>
+</ul> -->
+
+<mat-grid-list class="hlist" *ngFor="let hospital of hospitals_data" cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <h4 class="hhlist"> {{hospital.hospital.name}} <br> {{hospital.hospital.name_si}} <br> {{hospital.hospital.name_ta}} </h4>
+    </mat-grid-tile>
+
+
+</mat-grid-list>
+
+<!-- <div class="row">
+        <div class="col-xl">1 of 2</div>
+        <div class="col-xl">2 of 2</div>
+    </div> -->

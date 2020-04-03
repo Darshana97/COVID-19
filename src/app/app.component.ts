@@ -23,6 +23,13 @@ export class AppComponent {
   global_deaths_people = "";
   global_new_deaths_people = "";
   global_recovered_people = "";
+  hospitals_data: any = [
+    { "id": "", "hospital_id": "", "cumulative_local": "", "cumulative_foreign": "", "treatment_local": "", "treatment_foreign": "", "created_at": "", "updated_at": "", "deleted_at": "", "cumulative_total": "", "treatment_total": "", "hospital": [{ "id": "", "name": "", "name_si": "", "name_ta": "", "created_at": "", "updated_at": "", "deleted_at": "" }] }
+  ];
+
+ 
+
+
 
   constructor(private http: HttpClient) {
 
@@ -42,6 +49,8 @@ export class AppComponent {
       this.global_deaths_people = data["data"].global_deaths;
       this.global_new_deaths_people = data["data"].global_new_deaths;
       this.global_recovered_people = data["data"].global_recovered;
+      this.hospitals_data = data["data"].hospital_data;
+      
 
     })
   }
